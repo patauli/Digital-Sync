@@ -11,6 +11,9 @@ const nextConfig = {
     domains: ['blob.v0.dev'],
     formats: ['image/webp', 'image/avif'],
   },
+  experimental: {
+    optimizeCss: true,
+  },
   compress: true,
   poweredByHeader: false,
 }
