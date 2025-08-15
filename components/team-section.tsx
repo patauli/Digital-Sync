@@ -5,20 +5,9 @@ import Link from "next/link"
 
 const teamMembers = [
   {
-    name: "Vishwajeet",
-    role: "Founder & CEO",
-    bio: "Visionary leader with extensive experience in digital transformation and business growth strategies.",
-    image: "/team-ceo-vishwajeet.png",
-    social: {
-      linkedin: "https://linkedin.com/in/vishwajeet-bicrisales",
-      twitter: "https://x.com/Vshwax",
-      email: "vishwa@bicrisales.com",
-    },
-  },
-  {
     name: "Vipin Yadav",
-    role: "Head of SEO",
-    bio: "SEO expert specializing in organic growth strategies and technical optimization with proven results.",
+    role: "Head of SEO & Operations",
+    bio: "SEO expert and operations leader specializing in organic growth strategies and technical optimization with proven results.",
     image: "/team-seo-vipin.png",
     social: {
       linkedin: "https://linkedin.com/in/vipin-yadav-seo",

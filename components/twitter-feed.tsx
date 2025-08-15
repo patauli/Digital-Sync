@@ -11,8 +11,8 @@ const mockTweets = [
   {
     id: "1",
     text: "Just launched a new digital marketing campaign for a client and seeing amazing results! 📈 The power of targeted content and strategic SEO never fails to impress. #DigitalMarketing #SEO #BicriSales",
-    author: "Vishwajeet",
-    handle: "@Vshwax",
+    author: "BicriSales",
+    handle: "@Bicrisales",
     timestamp: "2h",
     likes: 24,
     retweets: 8,
@@ -22,8 +22,8 @@ const mockTweets = [
   {
     id: "2",
     text: "Pro tip: Your website's loading speed directly impacts your conversion rates. Even a 1-second delay can reduce conversions by 7%. Optimize for speed, optimize for success! ⚡ #WebDevelopment #UX",
-    author: "Vishwajeet",
-    handle: "@Vshwax",
+    author: "BicriSales",
+    handle: "@Bicrisales",
     timestamp: "6h",
     likes: 42,
     retweets: 15,
@@ -33,8 +33,8 @@ const mockTweets = [
   {
     id: "3",
     text: "The future of business is digital. Companies that embrace digital transformation today will lead tomorrow's market. Are you ready to grow your digital sales? 🚀 #DigitalTransformation #BusinessGrowth",
-    author: "Vishwajeet",
-    handle: "@Vshwax",
+    author: "BicriSales",
+    handle: "@Bicrisales",
     timestamp: "1d",
     likes: 67,
     retweets: 23,
@@ -44,8 +44,8 @@ const mockTweets = [
   {
     id: "4",
     text: "Social media isn't just about posting content - it's about building relationships, creating value, and fostering genuine connections with your audience. Quality over quantity, always! 💡 #SocialMediaMarketing",
-    author: "Vishwajeet",
-    handle: "@Vshwax",
+    author: "BicriSales",
+    handle: "@Bicrisales",
     timestamp: "2d",
     likes: 35,
     retweets: 11,
@@ -55,8 +55,8 @@ const mockTweets = [
   {
     id: "5",
     text: "Excited to share that BicriSales has helped another client achieve 300% ROI on their digital marketing investment! Success stories like these fuel our passion for excellence. 🎯 #ClientSuccess #ROI",
-    author: "Vishwajeet",
-    handle: "@Vshwax",
+    author: "BicriSales",
+    handle: "@Bicrisales",
     timestamp: "3d",
     likes: 89,
     retweets: 34,
@@ -115,7 +115,7 @@ export function TwitterFeed() {
                 <div className="flex items-start space-x-3">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <span className="text-primary font-bold text-lg">V</span>
+                      <span className="text-primary font-bold text-lg">B</span>
                     </div>
                   </div>
                   <div className="flex-1 min-w-0">
@@ -199,9 +199,9 @@ export function TwitterFeed() {
           {/* Follow Button */}
           <div className="text-center mt-8">
             <Button asChild className="bg-[#1DA1F2] hover:bg-[#1a91da] text-white">
-              <Link href="https://x.com/Vshwax" target="_blank" rel="noopener noreferrer">
+              <Link href="https://x.com/Bicrisales" target="_blank" rel="noopener noreferrer">
                 <Twitter className="mr-2 h-4 w-4" />
-                Follow @Vshwax
+                Follow @Bicrisales
               </Link>
             </Button>
           </div>
