@@ -1,5 +1,4 @@
 import { TrendingUp, Users, Globe, Award } from "lucide-react"
-import Image from "next/image"
 
 const stats = [
   {
@@ -30,12 +29,8 @@ const stats = [
 
 export function StatsSection() {
   return (
-    <section className="py-16 lg:py-24 bg-muted/30 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
-        <Image src="/business-growth-background.png" alt="" fill className="object-cover" />
-      </div>
-
-      <div className="container mx-auto px-4 relative">
+    <section className="py-16 lg:py-24 bg-muted/30">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Best Web Design and <span className="text-primary">Digital Marketing Agency</span> in India

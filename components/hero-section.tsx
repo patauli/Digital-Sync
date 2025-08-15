@@ -1,16 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 py-20 lg:py-32">
-      <div className="absolute inset-0 opacity-5">
-        <Image src="/placeholder-6hx0k.png" alt="" fill className="object-cover" />
-      </div>
-
-      <div className="container mx-auto px-4 relative">
+      <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
@@ -77,19 +72,10 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Right Content - Enhanced with Hero Image */}
+          {/* Right Content - Mockup */}
           <div className="relative">
             <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 lg:p-12">
-              <Image
-                src="/digital-marketing-team.png"
-                alt="BicriSales Digital Marketing Team"
-                width={600}
-                height={500}
-                className="w-full h-auto rounded-lg shadow-2xl"
-              />
-
-              {/* Overlay mockup for depth */}
-              <div className="absolute inset-4 bg-background/90 rounded-lg shadow-2xl overflow-hidden opacity-80">
+              <div className="bg-background rounded-lg shadow-2xl overflow-hidden">
                 <div className="bg-muted p-4 flex items-center gap-2">
                   <div className="flex gap-1">
                     <div className="w-3 h-3 rounded-full bg-red-500"></div>

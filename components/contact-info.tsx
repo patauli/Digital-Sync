@@ -50,12 +50,12 @@ export function ContactInfo() {
                   <div className="flex-1">
                     <h3 className="font-semibold mb-1">Email Us</h3>
                     <p className="text-muted-foreground text-sm mb-2">Send us your project details</p>
-                    <Link href="mailto:info@bicrisales.com" className="text-primary font-medium hover:underline">
-                      info@bicrisales.com
+                    <Link href="mailto:vishwa@bicrisales.com" className="text-primary font-medium hover:underline">
+                      vishwa@bicrisales.com
                     </Link>
                   </div>
                   <Button asChild size="sm" variant="outline">
-                    <Link href="mailto:info@bicrisales.com">Email</Link>
+                    <Link href="mailto:vishwa@bicrisales.com">Email</Link>
                   </Button>
                 </div>
               </CardContent>

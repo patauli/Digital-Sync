@@ -16,7 +16,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { PayPalButton } from "@/components/paypal-button"
 import Link from "next/link"
-import Image from "next/image"
 
 const services = [
   {
@@ -27,7 +26,6 @@ const services = [
     features: ["Responsive Design", "SEO Optimized", "Fast Loading", "Mobile-First Approach", "CMS Integration"],
     price: "Starting from $300",
     paypalButtonId: "NKH852N4Q67RC",
-    image: "/modern-website-design.png",
   },
   {
     icon: Search,
@@ -36,7 +34,6 @@ const services = [
     features: ["Keyword Research", "On-Page SEO", "Technical SEO", "Link Building", "Monthly Reports"],
     price: "Starting from $180/month",
     paypalButtonId: "NKH852N4Q67RC",
-    image: "/seo-analytics-dashboard.png",
   },
   {
     icon: Share2,
@@ -51,7 +48,6 @@ const services = [
     ],
     price: "Starting from $145/month",
     paypalButtonId: "NKH852N4Q67RC",
-    image: "/social-media-marketing.png",
   },
   {
     icon: ShoppingCart,
@@ -61,7 +57,6 @@ const services = [
     features: ["Store Setup", "Payment Gateway", "Inventory Management", "Order Processing", "Mobile Commerce"],
     price: "Starting from $420",
     paypalButtonId: "NKH852N4Q67RC",
-    image: "/placeholder-nmgdb.png",
   },
   {
     icon: PenTool,
@@ -70,7 +65,6 @@ const services = [
     features: ["Blog Writing", "Copywriting", "Video Content", "Graphic Design", "Content Strategy"],
     price: "Starting from $95/month",
     paypalButtonId: "NKH852N4Q67RC",
-    image: "/content-creation-process.png",
   },
   {
     icon: BarChart3,
@@ -79,7 +73,6 @@ const services = [
     features: ["Google Ads", "Facebook Ads", "Campaign Setup", "Optimization", "Performance Tracking"],
     price: "Starting from $120/month",
     paypalButtonId: "NKH852N4Q67RC",
-    image: "/ppc-dashboard.png",
   },
   {
     icon: Smartphone,
@@ -88,7 +81,6 @@ const services = [
     features: ["iOS & Android", "Cross-Platform", "UI/UX Design", "App Store Optimization", "Maintenance"],
     price: "Starting from $600",
     paypalButtonId: "NKH852N4Q67RC",
-    image: "/placeholder.svg?key=smdev",
   },
   {
     icon: Globe,
@@ -103,7 +95,6 @@ const services = [
     ],
     price: "Starting from $240",
     paypalButtonId: "NKH852N4Q67RC",
-    image: "/placeholder.svg?key=digstr",
   },
   {
     icon: Mail,
@@ -112,7 +103,6 @@ const services = [
     features: ["Campaign Design", "List Management", "Automation", "A/B Testing", "Analytics"],
     price: "Starting from $72/month",
     paypalButtonId: "NKH852N4Q67RC",
-    image: "/placeholder.svg?key=emailmk",
   },
   {
     icon: Video,
@@ -121,7 +111,6 @@ const services = [
     features: ["Video Production", "Animation", "Editing", "YouTube Optimization", "Social Video"],
     price: "Starting from $180/video",
     paypalButtonId: "NKH852N4Q67RC",
-    image: "/placeholder.svg?key=videomk",
   },
   {
     icon: Megaphone,
@@ -130,7 +119,6 @@ const services = [
     features: ["Logo Design", "Brand Guidelines", "Marketing Materials", "Brand Strategy", "Visual Identity"],
     price: "Starting from $215",
     paypalButtonId: "NKH852N4Q67RC",
-    image: "/placeholder.svg?key=branddev",
   },
   {
     icon: TrendingUp,
@@ -140,7 +128,6 @@ const services = [
     features: ["Google Analytics", "Custom Dashboards", "Monthly Reports", "Performance Insights", "ROI Tracking"],
     price: "Starting from $60/month",
     paypalButtonId: "NKH852N4Q67RC",
-    image: "/placeholder.svg?key=analytics",
   },
 ]
 
@@ -159,20 +146,8 @@ export function ServicesGrid() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group hover:shadow-xl transition-all duration-300 border-0 bg-card/50 hover:bg-card h-full overflow-hidden"
+              className="group hover:shadow-xl transition-all duration-300 border-0 bg-card/50 hover:bg-card h-full"
             >
-              {service.image && (
-                <div className="aspect-video overflow-hidden">
-                  <Image
-                    src={service.image || "/placeholder.svg"}
-                    alt={service.title}
-                    width={300}
-                    height={200}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              )}
-
               <CardHeader>
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors mb-4">
                   <service.icon className="h-6 w-6 text-primary" />
