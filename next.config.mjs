@@ -1,14 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
   images: {
-    unoptimized: true,
+    unoptimized: false,
+    domains: ['blob.v0.dev'],
+    formats: ['image/webp', 'image/avif'],
   },
+  experimental: {
+    optimizeCss: true,
+  },
+  compress: true,
+  poweredByHeader: false,
 }
 
 export default nextConfig
