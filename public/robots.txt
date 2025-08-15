@@ -1,0 +1,22 @@
+# Robots.txt for BicriSales
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow important pages
+Allow: /blog/
+Allow: /services/
+Allow: /portfolio/
+Allow: /about/
+Allow: /contact/
+
+# Sitemap location
+Sitemap: https://bicrisales.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
