@@ -73,8 +73,8 @@ export default function NotFound() {
                 <a href="tel:+919315426370" className="flex items-center gap-2 text-primary hover:underline">
                   📞 +919315426370
                 </a>
-                <a href="mailto:info@bicrisales.com" className="flex items-center gap-2 text-primary hover:underline">
-                  ✉️ info@bicrisales.com
+                <a href="mailto:vishwa@bicrisales.com" className="flex items-center gap-2 text-primary hover:underline">
+                  ✉️ vishwa@bicrisales.com
                 </a>
                 <a
                   href="https://wa.link/6xlsy9"

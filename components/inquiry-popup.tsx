@@ -283,9 +283,12 @@ export function InquiryPopup({ isOpen, onClose, trigger = "manual" }: InquiryPop
                     <Phone className="h-4 w-4" />
                     +919315426370
                   </a>
-                  <a href="mailto:info@bicrisales.com" className="flex items-center gap-2 text-primary hover:underline">
+                  <a
+                    href="mailto:vishwa@bicrisales.com"
+                    className="flex items-center gap-2 text-primary hover:underline"
+                  >
                     <Mail className="h-4 w-4" />
-                    info@bicrisales.com
+                    vishwa@bicrisales.com
                   </a>
                   <a
                     href="https://wa.link/6xlsy9"

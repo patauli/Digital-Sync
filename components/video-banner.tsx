@@ -54,10 +54,7 @@ export function VideoBanner() {
           onLoadedData={() => setIsLoaded(true)}
           poster="/video-poster.png"
         >
-          <source
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Startup_Brainstorming_Video_Creation-fsB7JrIg8qExFb3xW2BR2eVj556rjX.mp4"
-            type="video/mp4"
-          />
+          <source src="/digital-marketing-video.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
             <div className="text-center text-white">

@@ -10,7 +10,7 @@ import { PopupTrigger } from "@/components/popup-trigger"
 export const metadata = {
   title: "Contact Us - BicriSales | Get Your Free Digital Marketing Quote",
   description:
-    "Contact BicriSales for your digital marketing needs. Call +919315426370 or email info@bicrisales.com for a free consultation and quote.",
+    "Contact BicriSales for your digital marketing needs. Call +919315426370 or email vishwa@bicrisales.com for a free consultation and quote.",
 }
 
 export default function ContactPage() {

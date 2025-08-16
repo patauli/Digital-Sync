@@ -7,12 +7,8 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: false,
-    domains: ['blob.v0.dev'],
-    formats: ['image/webp', 'image/avif'],
+    unoptimized: true,
   },
-  compress: true,
-  poweredByHeader: false,
 }
 
 export default nextConfig
