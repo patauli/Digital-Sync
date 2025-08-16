@@ -6,6 +6,7 @@ import { StatsSection } from "@/components/stats-section"
 import { ServicesOverview } from "@/components/services-overview"
 import { InteractiveGlobe } from "@/components/interactive-globe"
 import { TwitterFeed } from "@/components/twitter-feed"
+import { GoogleReviews } from "@/components/google-reviews"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 
@@ -19,6 +20,7 @@ export default function HomePage() {
         <StatsSection />
         <ServicesOverview />
         <InteractiveGlobe />
+        <GoogleReviews />
         <TwitterFeed />
         <CTASection />
       </main>

@@ -105,7 +105,7 @@ export function AIChatbot() {
     }
 
     if (message.includes("contact") || message.includes("call") || message.includes("phone")) {
-      return `You can reach BicriSales directly:\n\n📞 Phone: +919315426370\n📧 Email: vishwa@bicrisales.com\n💬 WhatsApp: https://wa.link/6xlsy9\n\nOur team is available Monday-Friday, 9 AM - 6 PM IST. Would you like me to arrange a callback or connect you with our WhatsApp support?`
+      return `You can reach BicriSales directly:\n\n📞 Phone: +919315426370\n📧 Email: info@bicrisales.com\n💬 WhatsApp: https://wa.link/6xlsy9\n\nOur team is available Monday-Friday, 9 AM - 6 PM IST. Would you like me to arrange a callback or connect you with our WhatsApp support?`
     }
 
     if (message.includes("team") || message.includes("about")) {
@@ -292,7 +292,7 @@ export function AIChatbot() {
                         <span>Call Now</span>
                       </a>
                       <a
-                        href="mailto:vishwa@bicrisales.com"
+                        href="mailto:info@bicrisales.com"
                         className="flex items-center space-x-1 text-primary hover:underline"
                       >
                         <Mail className="h-3 w-3" />

@@ -3,6 +3,9 @@ import type { Metadata } from "next"
 import { Inter, Poppins } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { AIChatbot } from "@/components/ai-chatbot"
+import { ErrorBoundary } from "@/components/error-boundary"
+import { Analytics } from "@vercel/analytics/next"
+import { Suspense } from "react"
 import "./globals.css"
 
 const inter = Inter({
@@ -148,7 +151,7 @@ export default function RootLayout({
                 "@type": "ContactPoint",
                 telephone: "+919315426370",
                 contactType: "customer service",
-                email: "vishwa@bicrisales.com",
+                email: "info@bicrisales.com",
               },
               founder: {
                 "@type": "Person",
@@ -181,8 +184,11 @@ html {
       </head>
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          {children}
-          <AIChatbot />
+          <Suspense fallback={null}>
+            <ErrorBoundary>{children}</ErrorBoundary>
+            <AIChatbot />
+            <Analytics />
+          </Suspense>
         </ThemeProvider>
       </body>
     </html>

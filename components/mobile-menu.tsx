@@ -146,9 +146,9 @@ export function MobileMenu({ isOpen, onClose, navigation }: MobileMenuProps) {
                 <Phone className="h-4 w-4 text-primary" />
                 <span className="font-medium">+919315426370</span>
               </a>
-              <a href="mailto:vishwa@bicrisales.com" className="flex items-center space-x-3 text-sm touch-target">
+              <a href="mailto:info@bicrisales.com" className="flex items-center space-x-3 text-sm touch-target">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="font-medium">vishwa@bicrisales.com</span>
+                <span className="font-medium">info@bicrisales.com</span>
               </a>
             </div>
 

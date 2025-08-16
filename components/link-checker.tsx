@@ -11,36 +11,42 @@ export function LinkChecker({ children }: LinkCheckerProps) {
     if (process.env.NODE_ENV !== "development") return
 
     const checkLinks = () => {
-      const links = document.querySelectorAll("a[href]")
-      const brokenLinks: string[] = []
+      try {
+        const links = document.querySelectorAll("a[href]")
+        const brokenLinks: string[] = []
 
-      links.forEach((link) => {
-        const href = link.getAttribute("href")
-        if (!href) return
+        links.forEach((link) => {
+          const href = link.getAttribute("href")
+          if (!href) return
 
-        // Check internal links
-        if (href.startsWith("/") && !href.startsWith("//")) {
-          // Skip checking dynamic routes and external links
-          if (href.includes("[") || href.includes("mailto:") || href.includes("tel:") || href.includes("wa.link"))
-            return
+          // Check internal links
+          if (href.startsWith("/") && !href.startsWith("//")) {
+            // Skip checking dynamic routes and external links
+            if (href.includes("[") || href.includes("mailto:") || href.includes("tel:") || href.includes("wa.link"))
+              return
 
-          // Simple check for common pages
-          const commonPages = ["/", "/about", "/services", "/portfolio", "/blog", "/contact"]
-          const isServicePage = href.startsWith("/services/")
-          const isBlogPage = href.startsWith("/blog/")
-          const isPortfolioPage = href.startsWith("/portfolio/")
+            // Simple check for common pages
+            const commonPages = ["/", "/about", "/services", "/portfolio", "/blog", "/contact"]
+            const isServicePage = href.startsWith("/services/")
+            const isBlogPage = href.startsWith("/blog/")
+            const isPortfolioPage = href.startsWith("/portfolio/")
 
-          if (!commonPages.includes(href) && !isServicePage && !isBlogPage && !isPortfolioPage) {
-            brokenLinks.push(href)
+            if (!commonPages.includes(href) && !isServicePage && !isBlogPage && !isPortfolioPage) {
+              brokenLinks.push(href)
+            }
           }
-        }
-      })
+        })
 
-      if (brokenLinks.length > 0) {
-        console.group("🔗 Link Checker - Development Mode")
-        console.warn(`Found ${brokenLinks.length} potential broken internal links:`)
-        brokenLinks.forEach((link) => console.warn(`  - ${link}`))
-        console.groupEnd()
+        if (brokenLinks.length > 0) {
+          console.group("🔗 Link Checker - Development Mode")
+          console.warn(`Found ${brokenLinks.length} potential broken internal links:`)
+          brokenLinks.forEach((link) => console.warn(`  - ${link}`))
+          console.groupEnd()
+        }
+      } catch (error) {
+        if (process.env.NODE_ENV === "development") {
+          console.error("[v0] Link checker error:", error)
+        }
       }
     }
 
