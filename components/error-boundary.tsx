@@ -25,11 +25,10 @@ export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoun
   }
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
+    // Log error to console in development
     if (process.env.NODE_ENV === "development") {
       console.error("[v0] Error caught by boundary:", error, errorInfo)
     }
-
-    // Example: sendErrorToService(error, errorInfo)
   }
 
   resetError = () => {

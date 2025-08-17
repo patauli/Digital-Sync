@@ -44,9 +44,7 @@ export function LinkChecker({ children }: LinkCheckerProps) {
           console.groupEnd()
         }
       } catch (error) {
-        if (process.env.NODE_ENV === "development") {
-          console.error("[v0] Link checker error:", error)
-        }
+        console.error("[v0] Link checker error:", error)
       }
     }
 
